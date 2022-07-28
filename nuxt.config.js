@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'bta-nuxt',
+    title: 'BTA Creative - Better Times Ahead',
     htmlAttrs: {
       lang: 'en'
     },
@@ -12,13 +12,13 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      //{ name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
       { 
         rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favicon.ico'
+        type: 'image/svg+xml',
+        href: '/favicon.svg'
       },
       { 
         rel: 'stylesheet',
@@ -36,8 +36,8 @@ export default {
     script: [
       {
         src: '/js/bootstrap.min.js',
-        type: 'text/javascript'
-      }
+        type: 'text/javascript',
+      },
     ]
   },
 
