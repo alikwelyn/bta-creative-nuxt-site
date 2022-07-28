@@ -1,11 +1,31 @@
 <template>
   <div>
-    <h1>Hello world!</h1>
+    <About />
+    <Video />
+    <Beseen />
+    <Wemake />
+    <Everywhere />
+    <Partners />
   </div>
 </template>
 
 <script>
+import About from '~/components/home/About.vue'
+import Video from '~/components/home/Video.vue'
+import Beseen from '~/components/home/Beseen.vue'
+import Wemake from '~/components/home/Wemake.vue'
+import Everywhere from '~/components/home/Everywhere.vue'
+import Partners from '~/components/home/Partners.vue'
+
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {
+      About,
+      Video,
+      Beseen,
+      Wemake,
+      Everywhere,
+      Partners,
+  }
 }
 </script>

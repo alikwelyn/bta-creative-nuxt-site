@@ -1,38 +1,59 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <NuxtLink 
+                    to="/"
+                    class="navbar-brand"
+                >
+                    <img src="~/assets/logo-bta.svg" width="100" />
+                </NuxtLink>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a 
+                                href="#trabalhos"
+                                class="nav-link active"
+                            >
+                            trabalhos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a 
+                                href="#como-fazemos"
+                                class="nav-link active"
+                            >
+                            como fazemos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a 
+                                href="#parceiros"
+                                class="nav-link active"
+                            >
+                            parceiros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink 
+                                to="/blog"
+                                class="nav-link active"
+                            >
+                            Blog
+                            </NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <a 
+                                href="#contato"
+                                class="nav-link active"
+                            >
+                            contato
+                            </a>
+                        </li>
                     </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
                 </div>
             </div>
         </nav>
@@ -46,5 +67,20 @@ export default {
 </script>
 
 <style>
-
+.navbar {
+    background-color: transparent;
+}
+.navbar-nav > li.nav-item {
+    padding-right: 10px;
+}
+.navbar-nav > li.nav-item > .nav-link {
+    color: #6d6e71;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.navbar-nav > li.nav-item > .nav-link:hover {
+  color: #fb1787;
+}
 </style>
