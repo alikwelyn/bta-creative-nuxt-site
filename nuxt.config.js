@@ -21,8 +21,9 @@ export default {
         href: '/favicon.svg'
       },
       { 
-        rel: 'stylesheet',
-        href: '/css/bootstrap.min.css'
+        rel: "stylesheet",
+        type: "text/css",
+        href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       },
       {
         rel: 'stylesheet',
@@ -34,10 +35,15 @@ export default {
       },
     ],
     script: [
-      {
-        src: '/js/bootstrap.min.js',
-        type: 'text/javascript',
+      { 
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js'
       },
+      { 
+        src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js'
+      },
+      { 
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'
+      }
     ]
   },
 

@@ -29,7 +29,7 @@
 							tempos melhores ainda<br>
 							sempre cheguem.
 						</p>
-						<div class="bonequinho wow fadeIn"></div>
+						<div class="bonequinho"></div>
 					</div>
 
 					<div class="col-md-6">
@@ -68,8 +68,8 @@ export default {
   width: 100%;
   height: 157px;
   position: absolute;
-  right: 20.5%;
-  top: 24.5%;
+  right: 5%;
+  top: 11%;
 }
 #quemsomos p.texto {
   color: #6d6e71;
@@ -88,7 +88,7 @@ export default {
   left: 22.5%;
   width: 40px;
   height: 40px;
-  bottom: 9.5%;
+  bottom: -6%;
   animation: slide 2.2s ease-in-out infinite;
 }
 @keyframes slide {

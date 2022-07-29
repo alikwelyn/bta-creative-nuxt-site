@@ -69,7 +69,7 @@ export default {
   background-image: url("assets/arrow.svg");
   position: absolute;
   display: inline;
-  left: 40%;
+  left: 33%;
   width: 40px;
   height: 40px;
   bottom: -4.5em;

@@ -29,3 +29,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+</style>

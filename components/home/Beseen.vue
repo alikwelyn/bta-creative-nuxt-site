@@ -76,8 +76,8 @@ export default {
   width: 100%;
   height: 157px;
   position: absolute;
-  bottom: -1565px;
-  left: 0;
+  bottom: -10%;
+  right: 45%;
 }
 
 #beseen p.texto{
@@ -93,8 +93,8 @@ export default {
   content: '';
   background-image: url("~/assets/arrow.svg");
   position: absolute;
-  right: 29%;
-  bottom: -1530px;
+  right: 33%;
+  bottom: -6%;
   width: 40px;
   height: 40px;
   animation: slide 2.2s ease-in-out infinite;
