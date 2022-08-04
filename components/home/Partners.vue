@@ -10,6 +10,31 @@
             <div class="col-md-7">
 
             <div class="row clients bord">
+
+				<hooper :settings="hooperSettings">
+					<slide>
+						<a href="#" target="new">
+							<img src="~/assets/clientes/vira-jeri.svg" width="200">
+						</a>
+					</slide>
+					<slide>
+						<a href="#" target="new">
+							<img src="~/assets/clientes/keep-young.svg" width="200">
+						</a>
+					</slide>
+					<slide>
+						<a href="#" target="new">
+							<img src="~/assets/clientes/atelia867.svg" width="200">
+						</a>
+					</slide>
+					<slide>
+						<a href="#" target="new">
+							<img src="~/assets/clientes/batucada-dez.svg" width="200">
+						</a>
+					</slide>
+					<hooper-navigation slot="hooper-addons"></hooper-navigation>
+
+				</hooper>
             </div>
 
             </div>
@@ -20,8 +45,33 @@
 </template>
 
 <script>
+import {
+  Hooper,
+  Slide,
+  Navigation as HooperNavigation
+} from 'hooper';
+import 'hooper/dist/hooper.css';
+
 export default {
-  name: 'Partners'
+  name: 'Partners',
+  components: { 
+    Hooper,
+    Slide,
+    HooperNavigation
+  },
+  data: () => ({
+    hooperSettings: {
+		autoPlay: 1,
+		playSpeed: 1500,
+		itemsToShow: 3,
+		infiniteScroll: 1,
+		rtl: 1,
+		wheelControl: 0,
+		hoverPause: 1,
+		trimWhiteSpace: 1,
+		centerMode: 1,
+    },
+  }),
 }
 </script>
 
@@ -49,116 +99,24 @@ export default {
   font-size: 67.35px;
   padding-left: 0.5em;
 }
-
-
-.clients .brands:hover img {
-	-webkit-transform: scale(50%);
-	-ms-transform: scale(50%);
-	transform: scale(50%);
-	opacity: 1; }
-  
-  .clients .brands:hover .link {
-	opacity: 1 !important;
-	-webkit-transition: all 0;
-	-o-transition: all 0;
-	transition: all 0; }
-  
-  .clients .brands .item {
-	text-align: center;
+#partners .hooper-list {
+    padding-top: 25px;
 }
-  
-  .clients .brands .img {
-	position: relative; }
-	.clients .brands .img img {
-	  -webkit-transition: all .4s;
-	  -o-transition: all .4s;
-	  transition: all .4s; }
-	.clients .brands .img .link {
-	  font-size: 13px;
-	  width: -webkit-max-content;
-	  width: -moz-max-content;
-	  width: max-content;
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  -webkit-transform: translateX(-50%);
-	  -ms-transform: translateX(-50%);
-	  transform: translateX(-50%);
-	  opacity: 0;
-	  -webkit-transition: all .3s;
-	  -o-transition: all .3s;
-	  transition: all .3s; }
-  
-  .clients .bord .item {
-	margin-bottom: 30px; }
-  
-  .clients-brand .brands:hover .img {
-	-webkit-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-	opacity: 0; }
-  
-  .clients-brand .item {
-	position: relative;
-	text-align: center; }
-	.clients-brand .item .link {
-	  font-size: 16px;
-	  width: -webkit-max-content;
-	  width: -moz-max-content;
-	  width: max-content;
-	  position: absolute;
-	  top: 0;
-	  left: 50%;
-	  -webkit-transform: translateX(-50%);
-	  -ms-transform: translateX(-50%);
-	  transform: translateX(-50%);
-	  opacity: 0;
-	  -webkit-transition: all .3s;
-	  -o-transition: all .3s;
-	  transition: all .3s; }
-  
-  .clients-brand .img {
-	max-width: 85px;
-	margin: auto;
-	position: relative;
-	-webkit-transition: all .4s;
-	-o-transition: all .4s;
-	transition: all .4s; }
-
-	.clients-brand .item a {
-		width: 80px;
-		opacity: .5; }
-		.clients-brand .item a:hover {
-		  opacity: 1; }
-
-.owl-controls {
-  margin: 0;
+#partners .hooper-track {
+    align-items: baseline;
 }
-.owl-controls .owl-nav > div {
-  background: none repeat scroll 0 0 rgba(240, 240, 240, 0.0);
-  border-radius: 0;
-  display: block;
-  margin: 0;
-  padding: 10px;
-  position: absolute;
-  top: 30%;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  z-index: 6;
+#partners .hooper-navigation.is-rtl .hooper-prev {
+    left: auto;
+    right: -40px;
 }
-.owl-controls .owl-next {
-  right: -3em;
+#partners .hooper-navigation.is-rtl .hooper-next {
+    right: auto;
+    left: -68px;
 }
-.owl-controls .owl-next i {
-  color: #fb1787;
-  font-size: 40px;
+svg.icon.icon-arrowRight {
+    fill: #fb1787;
 }
-.owl-controls .owl-prev {
-  left: -3em;
-}
-.owl-controls .owl-prev i {
-  color: #fb1787;
-  font-size: 40px;
+svg.icon.icon-arrowLeft {
+    fill: #fb1787;
 }
 </style>
